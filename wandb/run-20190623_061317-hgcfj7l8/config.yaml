@@ -1,0 +1,17 @@
+wandb_version: 1
+
+epochs:
+  desc: null
+  value: 10
+height:
+  desc: null
+  value: 224
+n_train_samples:
+  desc: null
+  value: 200
+n_validation_samples:
+  desc: null
+  value: 200
+width:
+  desc: null
+  value: 224

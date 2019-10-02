@@ -1,0 +1,68 @@
+2019-06-23 06:13:17,994 DEBUG   MainThread:335 [wandb_config.py:_load_defaults():81] no defaults not found in config-defaults.yaml
+2019-06-23 06:13:17,996 DEBUG   MainThread:335 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jovyan/SoLong, universal_newlines=False, shell=None)
+2019-06-23 06:13:18,003 DEBUG   MainThread:335 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jovyan/SoLong, universal_newlines=False, shell=None)
+2019-06-23 06:13:18,014 DEBUG   MainThread:335 [cmd.py:execute():722] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/jovyan/SoLong, universal_newlines=False, shell=None)
+2019-06-23 06:13:18,020 DEBUG   MainThread:335 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jovyan/SoLong, universal_newlines=False, shell=None)
+2019-06-23 06:13:18,032 DEBUG   MainThread:335 [run_manager.py:__init__():460] Initialized sync for SoLong/hgcfj7l8
+2019-06-23 06:13:18,035 INFO    MainThread:335 [run_manager.py:wrap_existing_process():1016] wrapping existing process 326
+2019-06-23 06:13:18,035 WARNING MainThread:335 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+2019-06-23 06:13:18,039 DEBUG   MainThread:335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): pypi.org:443
+2019-06-23 06:13:18,137 DEBUG   MainThread:335 [connectionpool.py:_make_request():393] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 32027
+2019-06-23 06:13:18,154 INFO    MainThread:335 [run_manager.py:init_run():832] system metrics and metadata threads started
+2019-06-23 06:13:18,155 INFO    MainThread:335 [run_manager.py:init_run():866] upserting run before process can begin, waiting at most 10 seconds
+2019-06-23 06:13:18,155 DEBUG   Thread-13 :335 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jovyan/SoLong, universal_newlines=False, shell=None)
+2019-06-23 06:13:18,170 DEBUG   Thread-13 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-23 06:13:18,289 DEBUG   Thread-13 :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 412
+2019-06-23 06:13:18,292 INFO    Thread-13 :335 [run_manager.py:_upsert_run():928] saving patches
+2019-06-23 06:13:18,293 DEBUG   Thread-13 :335 [cmd.py:execute():722] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/jovyan/SoLong, universal_newlines=False, shell=None)
+2019-06-23 06:13:18,298 DEBUG   Thread-13 :335 [cmd.py:execute():722] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/jovyan/SoLong, universal_newlines=False, shell=None)
+2019-06-23 06:13:18,303 DEBUG   Thread-13 :335 [cmd.py:execute():722] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/jovyan/SoLong, universal_newlines=False, shell=None)
+2019-06-23 06:13:18,309 DEBUG   Thread-13 :335 [cmd.py:execute():722] Popen(['git', 'merge-base', 'HEAD', '6a7198261d09a46300a16645126103631c7f1887'], cwd=/home/jovyan/SoLong, universal_newlines=False, shell=None)
+2019-06-23 06:13:18,313 INFO    Thread-13 :335 [run_manager.py:_upsert_run():930] saving pip packages
+2019-06-23 06:13:18,314 INFO    Thread-13 :335 [run_manager.py:_upsert_run():932] initializing streaming files api
+2019-06-23 06:13:18,315 INFO    Thread-13 :335 [run_manager.py:_upsert_run():939] unblocking file change observer, beginning sync with W&B servers
+2019-06-23 06:13:18,315 INFO    MainThread:335 [run_manager.py:wrap_existing_process():1033] informing user process we are ready to proceed
+2019-06-23 06:13:18,316 INFO    MainThread:335 [run_manager.py:_sync_etc():1116] entering loop for messages from user process
+2019-06-23 06:13:19,011 INFO    Thread-2  :335 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/SoLong/wandb/run-20190623_061317-hgcfj7l8/config.yaml
+2019-06-23 06:13:19,024 DEBUG   Thread-2  :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-23 06:13:19,119 DEBUG   Thread-2  :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 683
+2019-06-23 06:13:19,122 INFO    Thread-2  :335 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/SoLong/wandb/run-20190623_061317-hgcfj7l8/requirements.txt
+2019-06-23 06:13:19,122 INFO    Thread-2  :335 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/SoLong/wandb/run-20190623_061317-hgcfj7l8/wandb-metadata.json
+2019-06-23 06:13:19,128 DEBUG   Thread-14 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-23 06:13:19,222 DEBUG   Thread-14 :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 758
+2019-06-23 06:13:19,229 DEBUG   Thread-14 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-06-23 06:13:19,476 DEBUG   Thread-14 :335 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/SoLong/hgcfj7l8/config.yaml?Expires=1561270459&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=acF86pz6k6gtY9W%2B2ju051EnZ5xdqj%2FUT04S8DqLwyHoYjgif0mPokMfj3s9F9B9sU2QLi2Y0MqnKn9KsReXOxDol9Y6QI3cWTWptMM7X38O3qIgsct7hnh6iAO6rrZUDQyg8B0XgRTNHtDOqYRX9DiyQ6T%2BFRO5GlbH0b1a7NEhGMhbEbZLEAnGZKqQ%2FdxwVErq6n6%2F3kLoa2dtYIP463kPcDYTaCfeOmXkZd2Hvyt9HrUOQ2OVj8v5WAVi%2FH4OT7pACiBea0446%2F0l%2Fa6eUv16TtOV08FKKpGG4ezw33pPn3aSdERboSuBS1e%2F30RuqkFjD83%2BRY2%2B%2Fp61lI8fYg%3D%3D HTTP/1.1" 200 0
+2019-06-23 06:13:21,959 DEBUG   Thread-6  :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-23 06:13:22,051 DEBUG   Thread-6  :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/SoLong/hgcfj7l8/file_stream HTTP/1.1" 200 316
+2019-06-23 06:13:35,015 INFO    Thread-2  :335 [run_manager.py:_on_file_modified():605] file/dir modified: /home/jovyan/SoLong/wandb/run-20190623_061317-hgcfj7l8/wandb-metadata.json
+2019-06-23 06:13:38,343 INFO    MainThread:335 [run_manager.py:_sync_etc():1139] received message from user process: {"exitcode": 1}
+2019-06-23 06:13:38,343 INFO    MainThread:335 [run_manager.py:_sync_etc():1225] closing log streams and sending exitcode to W&B
+2019-06-23 06:13:38,344 INFO    MainThread:335 [run_manager.py:shutdown():946] shutting down system stats and metadata service
+2019-06-23 06:13:38,399 DEBUG   Thread-6  :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/SoLong/hgcfj7l8/file_stream HTTP/1.1" 200 316
+2019-06-23 06:13:39,018 INFO    Thread-2  :335 [run_manager.py:_on_file_created():594] file/dir created: /home/jovyan/SoLong/wandb/run-20190623_061317-hgcfj7l8/wandb-events.jsonl
+2019-06-23 06:13:39,175 INFO    MainThread:335 [run_manager.py:shutdown():955] stopping streaming files and file change observer
+2019-06-23 06:13:40,019 INFO    Thread-2  :335 [run_manager.py:_on_file_modified():605] file/dir modified: /home/jovyan/SoLong/wandb/run-20190623_061317-hgcfj7l8/wandb-metadata.json
+2019-06-23 06:13:40,028 DEBUG   MainThread:335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-23 06:13:40,124 DEBUG   MainThread:335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 683
+2019-06-23 06:13:40,130 DEBUG   Thread-18 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-23 06:13:40,134 DEBUG   Thread-19 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-23 06:13:40,138 DEBUG   Thread-17 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-23 06:13:40,220 DEBUG   Thread-17 :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 773
+2019-06-23 06:13:40,229 DEBUG   Thread-18 :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 772
+2019-06-23 06:13:40,231 DEBUG   Thread-19 :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 768
+2019-06-23 06:13:40,254 DEBUG   Thread-17 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-06-23 06:13:40,256 DEBUG   Thread-19 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-06-23 06:13:40,256 DEBUG   Thread-18 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-06-23 06:13:40,520 DEBUG   Thread-18 :335 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/SoLong/hgcfj7l8/requirements.txt?Expires=1561270480&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=RSiXF24k3ODqQEYo1yh%2Bf19L0zvM%2FXDn%2B%2BGSJ%2FwHDSrk%2FnC0dctRVob%2FQVfio37u3onkiDijg%2BRDJPqr%2FSXGtpbqi6Mx07yy5CFdXWNeqtK3e%2Buf4KvPPC5Q4yOspazG3d%2B9egS9d8LSIYqAcK3AtZYTXAblLA%2B3pjFQ5AMBimVyRGqEN3HJWGZbtt5hIACLZD8hF6XzeuLwLt3GcpncHDSp9UMlbhBdGQUMFg2PiCTu5WiJkZtM0AjzPvM8khBfDXF3r%2FoaplSjR%2BfJSnZNrs2dnOTLa90ujq0SHSQsJt26dSZQwsCavfCEeMuYP1K6MsNEqT4b5dDxQhmDfl9N9Q%3D%3D HTTP/1.1" 200 0
+2019-06-23 06:13:40,622 DEBUG   Thread-17 :335 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/SoLong/hgcfj7l8/config.yaml?Expires=1561270480&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=FnMU21uWAz8jFxj%2FepYKOVX0yeJQpzFXlVJBlD4KibbHAzVa%2FXJ2urXIfru1LGpxNyKHLiijT0qwhzuX8Vyn0WONg7QLZ0vHtnx8YSdPrt2ikPgw%2FKXASczU56o3aGN4f0aTl6GjOYirDA%2Fk4qJ9R7HR54t64OuQT1VMn%2FN%2BVC9VFMTFP78%2BznfyofLZDpT9wVFAVl0Th6azileFGTWX7Vo7ID%2Fpk4doS%2FPAW%2B2aEMjQueoDFUFE5R6eiButQsmXe4wUOsXV2H2QkbUv4UdIvGd05EFfkNJny6I7iyxUKakTLPLh4mSlxwoqdP3CirP5U%2BMmAOxYPGqDhmhYYKcJVw%3D%3D HTTP/1.1" 200 0
+2019-06-23 06:13:40,627 DEBUG   Thread-19 :335 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/univai-ss2019/SoLong/hgcfj7l8/wandb-metadata.json?Expires=1561270480&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=EtXAU6OEAq4H3uNSrGvP2RHkV9hdbdfJ%2BmMk9HG0S2calFrAcKJiscIWVfxKullomYMpt1iJnzg8g9i6%2Fla5Zu7xjLOgbxQR0Ilju44TI7%2F6ayTeefsBQW5Eawsi8q7tb23HxlIZkwO%2BJuMKTI08VG56Z2OAK8zclMhVta35LqpdeN70gSbMvG%2B6bYhrHKqysC6yf9WFgQULzqXDbK9Vr3Oif0oMtnSUgh5nb97Z0MHwHkH6Y80BxXl2blf4q2VThCv8yrxs2VCD%2B%2BMYu88jDc6LtWpUp8vgQdmcI%2FgU8%2Fe3aTwrOTJOXz9ak5Cwj4S4IfU6UDcu0hTNCc7oA0xMLQ%3D%3D HTTP/1.1" 200 0
+2019-06-23 06:13:41,026 DEBUG   Thread-20 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-23 06:13:41,029 DEBUG   Thread-21 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): api.wandb.ai:443
+2019-06-23 06:13:41,113 DEBUG   Thread-20 :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 768
+2019-06-23 06:13:41,117 DEBUG   Thread-20 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-06-23 06:13:41,118 DEBUG   Thread-21 :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 760
+2019-06-23 06:13:41,121 DEBUG   Thread-21 :335 [connectionpool.py:_new_conn():813] Starting new HTTPS connection (1): storage.googleapis.com:443
+2019-06-23 06:13:41,125 DEBUG   Thread-6  :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/SoLong/hgcfj7l8/file_stream HTTP/1.1" 200 316
+2019-06-23 06:13:41,188 DEBUG   Thread-6  :335 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /univai-ss2019/SoLong/hgcfj7l8/file_stream HTTP/1.1" 200 313
+2019-06-23 06:13:41,189 INFO    MainThread:335 [run_manager.py:_sync_etc():1237] process only ran for 23 seconds, not syncing files
+2019-06-23 06:13:41,189 INFO    MainThread:335 [hgcfj7l8:run_manager.py:_sync_etc():1237] process only ran for 23 seconds, not syncing files

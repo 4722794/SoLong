@@ -1,0 +1,24 @@
+{
+    "root": "/home/jovyan/SoLong",
+    "git": {
+        "remote": "https://github.com/4722794/SoLong.git",
+        "commit": "6a7198261d09a46300a16645126103631c7f1887"
+    },
+    "email": null,
+    "startedAt": "2019-06-23T06:13:17.445369",
+    "host": "jupyter-4722794",
+    "username": "jovyan",
+    "os": "Linux-4.14.127+-x86_64-with-debian-buster-sid",
+    "python": "3.7.3",
+    "gpu": "Tesla K80",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "program": "FunctionalFish.py",
+    "cuda": "10.1.168",
+    "args": [],
+    "state": "failed",
+    "heartbeatAt": "2019-06-23T06:13:39.175443",
+    "jobType": null,
+    "mode": "run",
+    "exitcode": 1
+}

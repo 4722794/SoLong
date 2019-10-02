@@ -1,0 +1,8 @@
+wandb_version: 1
+
+height:
+  desc: null
+  value: 224
+width:
+  desc: null
+  value: 224

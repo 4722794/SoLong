@@ -1,0 +1,235 @@
+WARNING:tensorflow:From /opt/conda/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-06-23 06:13:18.887649: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-06-23 06:13:18.895320: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300000000 Hz
+2019-06-23 06:13:18.896041: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5645ba4b3ae0 executing computations on platform Host. Devices:
+2019-06-23 06:13:18.896087: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-06-23 06:13:18.965919: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-06-23 06:13:18.967338: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5645b9b5c960 executing computations on platform CUDA. Devices:
+2019-06-23 06:13:18.967383: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-06-23 06:13:18.967596: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:05.0
+totalMemory: 11.17GiB freeMemory: 450.38MiB
+2019-06-23 06:13:18.967650: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-06-23 06:13:18.968987: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-06-23 06:13:18.969028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-06-23 06:13:18.969055: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-06-23 06:13:18.969259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 225 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:05.0, compute capability: 3.7)
+Found 0 images belonging to 8 classes.
+Found 0 images belonging to 8 classes.
+2019-06-23 06:13:38.317947: W tensorflow/core/common_runtime/bfc_allocator.cc:267] Allocator (GPU_0_bfc) ran out of memory trying to allocate 392.00MiB.  Current allocation summary follows.
+2019-06-23 06:13:38.318019: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (256): 	Total Chunks: 42, Chunks in use: 42. 10.5KiB allocated for chunks. 10.5KiB in use in bin. 1.1KiB client-requested in use in bin.
+2019-06-23 06:13:38.318035: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (512): 	Total Chunks: 4, Chunks in use: 4. 2.0KiB allocated for chunks. 2.0KiB in use in bin. 2.0KiB client-requested in use in bin.
+2019-06-23 06:13:38.318046: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (1024): 	Total Chunks: 6, Chunks in use: 6. 6.2KiB allocated for chunks. 6.2KiB in use in bin. 6.0KiB client-requested in use in bin.
+2019-06-23 06:13:38.318058: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (2048): 	Total Chunks: 8, Chunks in use: 8. 16.0KiB allocated for chunks. 16.0KiB in use in bin. 16.0KiB client-requested in use in bin.
+2019-06-23 06:13:38.318069: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (4096): 	Total Chunks: 3, Chunks in use: 3. 14.8KiB allocated for chunks. 14.8KiB in use in bin. 14.6KiB client-requested in use in bin.
+2019-06-23 06:13:38.318080: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (8192): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-06-23 06:13:38.318092: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (16384): 	Total Chunks: 2, Chunks in use: 2. 32.0KiB allocated for chunks. 32.0KiB in use in bin. 32.0KiB client-requested in use in bin.
+2019-06-23 06:13:38.318103: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-06-23 06:13:38.318113: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (65536): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-06-23 06:13:38.318124: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (131072): 	Total Chunks: 1, Chunks in use: 1. 144.0KiB allocated for chunks. 144.0KiB in use in bin. 144.0KiB client-requested in use in bin.
+2019-06-23 06:13:38.318136: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (262144): 	Total Chunks: 1, Chunks in use: 1. 288.0KiB allocated for chunks. 288.0KiB in use in bin. 288.0KiB client-requested in use in bin.
+2019-06-23 06:13:38.318148: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (524288): 	Total Chunks: 1, Chunks in use: 1. 576.0KiB allocated for chunks. 576.0KiB in use in bin. 576.0KiB client-requested in use in bin.
+2019-06-23 06:13:38.318193: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (1048576): 	Total Chunks: 1, Chunks in use: 1. 1.12MiB allocated for chunks. 1.12MiB in use in bin. 1.12MiB client-requested in use in bin.
+2019-06-23 06:13:38.318219: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (2097152): 	Total Chunks: 2, Chunks in use: 2. 4.50MiB allocated for chunks. 4.50MiB in use in bin. 4.50MiB client-requested in use in bin.
+2019-06-23 06:13:38.318235: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (4194304): 	Total Chunks: 1, Chunks in use: 1. 4.50MiB allocated for chunks. 4.50MiB in use in bin. 4.50MiB client-requested in use in bin.
+2019-06-23 06:13:38.318247: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (8388608): 	Total Chunks: 6, Chunks in use: 6. 60.62MiB allocated for chunks. 60.62MiB in use in bin. 60.62MiB client-requested in use in bin.
+2019-06-23 06:13:38.318258: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-06-23 06:13:38.318268: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (33554432): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-06-23 06:13:38.318279: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (67108864): 	Total Chunks: 2, Chunks in use: 1. 153.56MiB allocated for chunks. 64.00MiB in use in bin. 64.00MiB client-requested in use in bin.
+2019-06-23 06:13:38.318290: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-06-23 06:13:38.318299: I tensorflow/core/common_runtime/bfc_allocator.cc:597] Bin (268435456): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2019-06-23 06:13:38.318310: I tensorflow/core/common_runtime/bfc_allocator.cc:613] Bin for 392.00MiB was 256.00MiB, Chunk State: 
+2019-06-23 06:13:38.318323: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b60000 of size 1280
+2019-06-23 06:13:38.318333: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b60500 of size 256
+2019-06-23 06:13:38.318342: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b60600 of size 256
+2019-06-23 06:13:38.318353: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b60700 of size 2048
+2019-06-23 06:13:38.318361: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b60f00 of size 256
+2019-06-23 06:13:38.318370: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61000 of size 256
+2019-06-23 06:13:38.318379: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61100 of size 256
+2019-06-23 06:13:38.318387: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61200 of size 256
+2019-06-23 06:13:38.318396: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61300 of size 1024
+2019-06-23 06:13:38.318404: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61700 of size 256
+2019-06-23 06:13:38.318413: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61800 of size 256
+2019-06-23 06:13:38.318421: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61900 of size 256
+2019-06-23 06:13:38.318430: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61a00 of size 256
+2019-06-23 06:13:38.318439: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61b00 of size 512
+2019-06-23 06:13:38.318448: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61d00 of size 256
+2019-06-23 06:13:38.318457: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61e00 of size 256
+2019-06-23 06:13:38.318465: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b61f00 of size 256
+2019-06-23 06:13:38.318473: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b62000 of size 256
+2019-06-23 06:13:38.318482: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b62100 of size 256
+2019-06-23 06:13:38.318491: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b62200 of size 256
+2019-06-23 06:13:38.318499: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b62300 of size 256
+2019-06-23 06:13:38.318508: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x503b62400 of size 9437184
+2019-06-23 06:13:38.318518: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x504462400 of size 9437184
+2019-06-23 06:13:38.318526: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x504d62400 of size 9437184
+2019-06-23 06:13:38.318535: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x505662400 of size 9437184
+2019-06-23 06:13:38.318543: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x505f62400 of size 9437184
+2019-06-23 06:13:38.318553: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x506862400 of size 2048
+2019-06-23 06:13:38.318561: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x506862c00 of size 2048
+2019-06-23 06:13:38.318570: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x506863400 of size 2048
+2019-06-23 06:13:38.318578: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x506863c00 of size 2048
+2019-06-23 06:13:38.318587: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x506864400 of size 2048
+2019-06-23 06:13:38.318612: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x506864c00 of size 4718592
+2019-06-23 06:13:38.318620: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x506ce4c00 of size 2048
+2019-06-23 06:13:38.318629: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x506ce5400 of size 2359296
+2019-06-23 06:13:38.318638: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x506f25400 of size 2359296
+2019-06-23 06:13:38.318646: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507165400 of size 1024
+2019-06-23 06:13:38.318655: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507165800 of size 1024
+2019-06-23 06:13:38.318663: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507165c00 of size 1179648
+2019-06-23 06:13:38.318687: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507285c00 of size 1024
+2019-06-23 06:13:38.318696: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507286000 of size 589824
+2019-06-23 06:13:38.318705: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507316000 of size 512
+2019-06-23 06:13:38.318724: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507316200 of size 294912
+2019-06-23 06:13:38.318734: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50735e200 of size 512
+2019-06-23 06:13:38.318759: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50735e400 of size 147456
+2019-06-23 06:13:38.318767: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507382400 of size 256
+2019-06-23 06:13:38.318776: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507382500 of size 6912
+2019-06-23 06:13:38.318785: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507384000 of size 256
+2019-06-23 06:13:38.318793: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507384100 of size 256
+2019-06-23 06:13:38.318801: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507384200 of size 256
+2019-06-23 06:13:38.318810: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507384300 of size 4096
+2019-06-23 06:13:38.318818: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507385300 of size 256
+2019-06-23 06:13:38.318827: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507385400 of size 256
+2019-06-23 06:13:38.318835: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507385500 of size 16384
+2019-06-23 06:13:38.318844: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507389500 of size 256
+2019-06-23 06:13:38.318852: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507389600 of size 256
+2019-06-23 06:13:38.318861: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507389700 of size 256
+2019-06-23 06:13:38.318869: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507389800 of size 256
+2019-06-23 06:13:38.318877: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x507389900 of size 2048
+2019-06-23 06:13:38.318886: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738a100 of size 256
+2019-06-23 06:13:38.318894: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738a200 of size 256
+2019-06-23 06:13:38.318902: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738a300 of size 256
+2019-06-23 06:13:38.318910: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738a400 of size 256
+2019-06-23 06:13:38.318919: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738a500 of size 1024
+2019-06-23 06:13:38.318928: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738a900 of size 256
+2019-06-23 06:13:38.318936: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738aa00 of size 256
+2019-06-23 06:13:38.318944: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738ab00 of size 256
+2019-06-23 06:13:38.318953: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738ac00 of size 256
+2019-06-23 06:13:38.318962: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738ad00 of size 512
+2019-06-23 06:13:38.318970: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738af00 of size 256
+2019-06-23 06:13:38.318978: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738b000 of size 256
+2019-06-23 06:13:38.318987: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738b100 of size 256
+2019-06-23 06:13:38.318996: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738b200 of size 256
+2019-06-23 06:13:38.319004: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738b300 of size 256
+2019-06-23 06:13:38.319012: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738b400 of size 256
+2019-06-23 06:13:38.319021: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738b500 of size 256
+2019-06-23 06:13:38.319030: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50738b600 of size 16384000
+2019-06-23 06:13:38.319038: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50832b600 of size 4096
+2019-06-23 06:13:38.319047: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50832c600 of size 67108864
+2019-06-23 06:13:38.319056: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Chunk at 0x50c32c600 of size 16384
+2019-06-23 06:13:38.319064: I tensorflow/core/common_runtime/bfc_allocator.cc:632] Free  at 0x50c330600 of size 93911552
+2019-06-23 06:13:38.319073: I tensorflow/core/common_runtime/bfc_allocator.cc:638]      Summary of in-use Chunks by size: 
+2019-06-23 06:13:38.319083: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 42 Chunks of size 256 totalling 10.5KiB
+2019-06-23 06:13:38.319109: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 4 Chunks of size 512 totalling 2.0KiB
+2019-06-23 06:13:38.319119: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 5 Chunks of size 1024 totalling 5.0KiB
+2019-06-23 06:13:38.319128: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 1280 totalling 1.2KiB
+2019-06-23 06:13:38.319137: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 8 Chunks of size 2048 totalling 16.0KiB
+2019-06-23 06:13:38.320351: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 2 Chunks of size 4096 totalling 8.0KiB
+2019-06-23 06:13:38.320397: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 6912 totalling 6.8KiB
+2019-06-23 06:13:38.320428: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 2 Chunks of size 16384 totalling 32.0KiB
+2019-06-23 06:13:38.320456: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 147456 totalling 144.0KiB
+2019-06-23 06:13:38.320482: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 294912 totalling 288.0KiB
+2019-06-23 06:13:38.320510: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 589824 totalling 576.0KiB
+2019-06-23 06:13:38.320536: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 1179648 totalling 1.12MiB
+2019-06-23 06:13:38.320561: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 2 Chunks of size 2359296 totalling 4.50MiB
+2019-06-23 06:13:38.320586: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 4718592 totalling 4.50MiB
+2019-06-23 06:13:38.320612: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 5 Chunks of size 9437184 totalling 45.00MiB
+2019-06-23 06:13:38.320641: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 16384000 totalling 15.62MiB
+2019-06-23 06:13:38.320679: I tensorflow/core/common_runtime/bfc_allocator.cc:641] 1 Chunks of size 67108864 totalling 64.00MiB
+2019-06-23 06:13:38.320701: I tensorflow/core/common_runtime/bfc_allocator.cc:645] Sum Total of in-use chunks: 135.81MiB
+2019-06-23 06:13:38.320730: I tensorflow/core/common_runtime/bfc_allocator.cc:647] Stats: 
+Limit:                   236322816
+InUse:                   142411264
+MaxInUse:                142411264
+NumAllocs:                     105
+MaxAllocSize:             67108864
+
+2019-06-23 06:13:38.320763: W tensorflow/core/common_runtime/bfc_allocator.cc:271] *************************************************************_______________________________________
+2019-06-23 06:13:38.320836: W tensorflow/core/framework/op_kernel.cc:1401] OP_REQUIRES failed at random_op.cc:202 : Resource exhausted: OOM when allocating tensor with shape[25088,4096] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1334, in _do_call
+    return fn(*args)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[25088,4096] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[{{node fc1/random_uniform/RandomUniform}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "FunctionalFish.py", line 139, in <module>
+    x = VGG16(conv_base)(entry)
+  File "/opt/conda/lib/python3.7/site-packages/keras/applications/__init__.py", line 28, in wrapper
+    return base_fun(*args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/keras/applications/vgg16.py", line 11, in VGG16
+    return vgg16.VGG16(*args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/keras_applications/vgg16.py", line 210, in VGG16
+    model.load_weights(weights_path)
+  File "/opt/conda/lib/python3.7/site-packages/keras/engine/network.py", line 1166, in load_weights
+    f, self.layers, reshape=reshape)
+  File "/opt/conda/lib/python3.7/site-packages/keras/engine/saving.py", line 1058, in load_weights_from_hdf5_group
+    K.batch_set_value(weight_value_tuples)
+  File "/opt/conda/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py", line 2470, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "/opt/conda/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py", line 206, in get_session
+    session.run(tf.variables_initializer(uninitialized_vars))
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1348, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[25088,4096] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[node fc1/random_uniform/RandomUniform (defined at /opt/conda/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4139) ]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+
+Caused by op 'fc1/random_uniform/RandomUniform', defined at:
+  File "FunctionalFish.py", line 139, in <module>
+    x = VGG16(conv_base)(entry)
+  File "/opt/conda/lib/python3.7/site-packages/keras/applications/__init__.py", line 28, in wrapper
+    return base_fun(*args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/keras/applications/vgg16.py", line 11, in VGG16
+    return vgg16.VGG16(*args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/keras_applications/vgg16.py", line 178, in VGG16
+    x = layers.Dense(4096, activation='relu', name='fc1')(x)
+  File "/opt/conda/lib/python3.7/site-packages/keras/engine/base_layer.py", line 431, in __call__
+    self.build(unpack_singleton(input_shapes))
+  File "/opt/conda/lib/python3.7/site-packages/keras/layers/core.py", line 866, in build
+    constraint=self.kernel_constraint)
+  File "/opt/conda/lib/python3.7/site-packages/keras/legacy/interfaces.py", line 91, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/keras/engine/base_layer.py", line 249, in add_weight
+    weight = K.variable(initializer(shape),
+  File "/opt/conda/lib/python3.7/site-packages/keras/initializers.py", line 218, in __call__
+    dtype=dtype, seed=self.seed)
+  File "/opt/conda/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py", line 4139, in random_uniform
+    dtype=dtype, seed=seed)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/ops/random_ops.py", line 247, in random_uniform
+    rnd = gen_random_ops.random_uniform(shape, dtype, seed=seed1, seed2=seed2)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/ops/gen_random_ops.py", line 777, in random_uniform
+    name=name)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py", line 788, in _apply_op_helper
+    op_def=op_def)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 3300, in create_op
+    op_def=op_def)
+  File "/opt/conda/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1801, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+ResourceExhaustedError (see above for traceback): OOM when allocating tensor with shape[25088,4096] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[node fc1/random_uniform/RandomUniform (defined at /opt/conda/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4139) ]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+
